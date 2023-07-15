@@ -8,9 +8,10 @@
     "dev": "nodemon",
     "build": "rm -rf ./dist && tsc -p tsconfig.json",
     "prod": "npm run build && npm run start",
-    "dk-generate": "drizzle-kit generate:pg",
-    "dk-i": "drizzle-kit introspect:pg ",
-    "dk-deploy": "ts-node --require tsconfig-paths/register drizzle/deploy.ts"
+    "dk:g": "drizzle-kit generate:pg",
+    "dk:i": "drizzle-kit introspect:pg",
+    "dk:dev": "drizzle-kit studio",
+    "dk:deploy": "ts-node --require tsconfig-paths/register drizzle/deploy.ts"
   },
   "keywords": [],
   "author": "",
